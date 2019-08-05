@@ -1,3 +1,4 @@
+import 'package:autenticaciongoogle/User/ui/screens/principal_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -35,7 +36,7 @@ class _SignInScreenState extends State<SignInScreen> {
         if(!snapshot.hasData || snapshot.hasError){
           return _signInGoogleUI();
         }else{
-          return ProfileUserPage();
+          return Principal();
         }
       },
     );
@@ -55,7 +56,7 @@ class _SignInScreenState extends State<SignInScreen> {
               SignInButton(
                 Buttons.Google,
                 onPressed: (){
-                  userBloc.signOut();
+                  //userBloc.signOut();
                   userBloc.signIn().then((FirebaseUser user)=>print('El usuario es ${user.displayName}'));
                 },
               ),

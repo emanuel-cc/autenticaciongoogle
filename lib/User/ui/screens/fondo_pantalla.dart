@@ -8,8 +8,7 @@ class FondoPantala extends StatefulWidget {
 class _FondoPantallaState extends State<FondoPantala> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         width: 420.0,
         height: 430.0,
         child: Image.asset(
@@ -17,7 +16,6 @@ class _FondoPantallaState extends State<FondoPantala> {
           fit: BoxFit.cover,
         ),
         //color: Colors.green,
-      ),
-    );
+      );
   }
 }

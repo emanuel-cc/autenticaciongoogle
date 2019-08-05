@@ -9,25 +9,25 @@ class _ImagesPageState extends State<ImagesPage> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ListView(
-        //shrinkWrap: false,
-        //itemBuilder: (context,index){
-        //Column(
-        children: <Widget>[
-          _card(),
-          _card2(),
-          _card3(),
-          _card4(),
-          _card5(),
-          _card6(),
-          _card7(),
-          _card8(),
-          SizedBox()
-        ],
-        //),
-        //},
-      ),
-    );
+        child: ListView(
+                  //shrinkWrap: false,
+                  //itemBuilder: (context,index){
+                  //Column(
+                  children: <Widget>[
+                    _card(),
+                    _card2(),
+                    _card3(),
+                    _card4(),
+                    _card5(),
+                    _card6(),
+                    _card7(),
+                    _card8(),
+                    SizedBox()
+                  ],
+                  //),
+                  //},
+        ),
+      );
   }
 
   Widget _card() {

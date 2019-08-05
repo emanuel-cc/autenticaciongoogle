@@ -1,4 +1,6 @@
 import 'package:autenticaciongoogle/User/bloc/bloc_user.dart';
+import 'package:autenticaciongoogle/User/repository/firebase_auth_api.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -65,8 +67,8 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                              'https://img-cdn.hipertextual.com/files/2019/04/hipertextual-avengers-endgame-contiene-ultimo-cameo-stan-lee-2019632812.jpg?strip=all&lossy=1&quality=65&resize=740%2C490&ssl=1'),
                         ),*/
                         Container(
-                          width: 40.0,
-                          height: 40.0,
+                          width: 60.0,
+                          height: 60.0,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
@@ -75,6 +77,7 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                             )
                           ),
                         ),
+                        
                         SizedBox(
                           width: 10.0,
                         ),
