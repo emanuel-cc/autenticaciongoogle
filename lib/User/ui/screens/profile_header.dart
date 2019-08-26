@@ -16,21 +16,21 @@ class _ProfileHeaderState extends State<ProfileHeader> {
       stream: userBloc.streamFirebase,
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         switch (snapshot.connectionState) {
+          
           case ConnectionState.waiting:
             print(snapshot.connectionState);
             return CircularProgressIndicator();
-            break;
           case ConnectionState.none:
             return CircularProgressIndicator();
-            break;
           case ConnectionState.active:
             return showProfileData(snapshot);
-            break;
           case ConnectionState.done:
             return showProfileData(snapshot);
-            break;
+            
         }
+
       },
+      
     );
     /*Scaffold(
       body: Stack(

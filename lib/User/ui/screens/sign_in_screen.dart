@@ -58,6 +58,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 onPressed: (){
                   //userBloc.signOut();
                   userBloc.signIn().then((FirebaseUser user)=>print('El usuario es ${user.displayName}'));
+                  setState(() {
+                    
+                  });
                 },
               ),
             ],
